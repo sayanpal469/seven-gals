@@ -5,33 +5,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEVEN GALS</title>
+
+    <!-- BOOSTTRAP CSS FILE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- BOOSTTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS FILE -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-5">
-            <a href="" class="navbar-brand"> <img src="img/Seven Gals Icon (Black).png" alt="">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid px-md-5">
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+                <img src="img/Seven Gals Icon (Black).png" alt="Logo">
                 <span class="Navlogo">
                     SEVEN GALS
-                </span></a>
+                </span>
+            </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavbarIcon">
-                <img src="img/toggle.png" alt="">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="NavbarIcon">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"> <a href="" class="nav-link">About Us</a></li>
-                    <li class="nav-item"> <a href="" class="nav-link">Shop</a></li>
-                    <li class="nav-item"> <a href="" class="nav-link">
-                            <img class="icon" src="img/user.svg" alt="">
-                        </a></li>
-                    <li class="nav-item"> <a href="" class="nav-link">
-                            <img class="icon" src="img/cart3.svg" alt="">
-                        </a></li>
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"> <a href="#" class="nav-link fw-500">About Us</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle fw-500" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another</a></li>
+                                <li><a class="dropdown-item" href="#">Something</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person nav-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">
+                            <i class="bi bi-cart3 nav-icon"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -40,15 +62,17 @@
 
     <!-------------------SECTION 1----------------->
 
-    <div class="section1 row d-flex align-content-center">
-        <div class="col-lg-6">
+    <section class="container-fluid">
+        <div class="section1 row d-flex align-content-center">
+            <div class="col-lg-6 text-center top-heading">
+                <h2 class="">NEW COLLECTION 2022</h2>
+                <h1 class="mt-2">Fall Winter Sale</h1>
+                <button class="btn mt-2 rounded-5 px-5 py-3">SHOP NOW</button>
+            </div>
+            <div class="col-lg-6">
+            </div>
         </div>
-        <div class="col-lg-6 text-center top-heading">
-            <h2 class="">NEW COLLECTION 2022</h2>
-            <h1 class="mt-2">Fall Winter Sale</h1>
-            <button class="btn mt-2 rounded-5 px-5 py-3">SHOP NOW</button>
-        </div>
-    </div>
+    </section>
 
 
     <!-------------------SECTION 2----------------->
@@ -136,15 +160,23 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 text-center" style="width: 18rem; margin: auto;">
-                <div class="bagpack mb-5">
+            <div class="col-lg-4 text-center" style="width: 18rem; margin: auto; padding: 0;">
+                <div class="bagpack mb-3 position-relative">
                     <img class="img-fluid" src="img/bag.webp" alt="">
-                    <button class="btn rounded-0">Shop Now</button>
+                    <div class="small-sall-box">
+                        <h4>WOMEN'S BAGPACKS</h4>
+                        <p>View Collections</p>
+                        <button class="btn rounded-0">Shop Now</button>
+                    </div>
                 </div>
 
-                <div class="sunglass">
-                    <img class="img-fluid" src="img/sunglass.webp" alt="">
-                    <button class="btn rounded-0 mt-0">Shop now</button>
+                <div class="sunglass position-relative">
+                    <img class="img-fluid" src="img/sunglass-2.jpeg" alt="">
+                    <div class="small-sall-box">
+                        <h4>MEN'S SUNGLASS</h4>
+                        <p>View Collections</p>
+                        <button class="btn rounded-0 mt-0">Shop now</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,22 +184,22 @@
 
 
     <!-------------------SECTION 4----------------->
-    <div class="section5 row px-5">
-        <div class="col-lg-7 s5Box">
-            <div>
-                <h2 class="fs-1">All Global Brands in Singel Place</h2>
-                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam necessitatibus deleniti, nemo
-                    soluta doloribus a unde voluptatem autem minima eum repudiandae? Quaerat voluptas rem asperiores</p>
+    <section class="container-fluid">
+        <div class="section5 row px-5">
+            <div class="col-lg-7 s5Box">
+                <div>
+                    <h2 class="fs-1">All Global Brands in Singel Place</h2>
+                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsam necessitatibus deleniti, nemo
+                        soluta doloribus a unde voluptatem autem minima eum repudiandae? Quaerat voluptas rem asperiores</p>
                     <button class="btn rounded-0">Explore</button>
+                </div>
             </div>
+            <div class="col-lg-5"></div>
         </div>
-        <div class="col-lg-5"></div>
-    </div>
+    </section>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <!-- BOOSTTRAP JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

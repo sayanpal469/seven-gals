@@ -1,162 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.navbar-brand img{
-    width: 100px;
+.navbar-brand img {
+	width: 80px;
 }
 
-
-.nav-item .icon{
-    width: 25px;
+.nav-item .icon {
+	width: 25px;
 }
 
-.nav-link{
-    margin-left: 10px;
+.nav-icon {
+	font-size: 20px;
 }
 
-.section1{
-    background-image: url(img/banner.jpg);
-    height: 560px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
-   
+.nav-link {
+	margin-left: 10px;
+}
+.Navlogo {
+	font-size: 35px;
+}
+@media screen and (max-width: 481px) {
+	.navbar-brand img {
+		width: 65px;
+	}
+	.Navlogo {
+		font-size: 25px;
+	}
 }
 
-.top-heading h2{
-    font-size: 45px;
+.section1 {
+	background-image: url(img/banner.jpg);
+	height: 560px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
 }
 
-.top-heading h1{
-    font-size: 80px;
-    font-weight: 700;
-}
-.top-heading .btn{
-    font-size: 20px;
-    background-color: yellowgreen;
-    border: none;
+.top-heading h2 {
+	font-size: 35px;
 }
 
-.top-heading .btn:hover{
-    background-color: green;
+.top-heading h1 {
+	font-size: 70px;
+	font-weight: 700;
 }
 
-.b{
-    border: 1px solid green;
+.top-heading .btn {
+	font-size: 20px;
+	background-color: yellowgreen;
+	border: none;
+	color: #fff;
 }
 
-
-.s2Box{
-    display: flex;
-    align-items: center ;
+.top-heading .btn:hover {
+	background-color: green;
 }
 
-.s2Box p{
-    font-size: 18px;
+.b {
+	border: 1px solid green;
 }
 
-.s2logo{
-    width: 40px;
+.s2Box {
+	display: flex;
+	align-items: center;
 }
 
-.section3{
-    margin-top: 120px;
+.s2Box p {
+	font-size: 18px;
 }
 
-
-.menSale{
-    background-image: url(img/7.webp);
-    height: 450px;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.s2logo {
+	width: 40px;
 }
 
-
-.menSale .btn{
-    padding: 10px 20px;
-    background-color: yellowgreen;
-    font-size: 18px;
+.section3 {
+	margin-top: 120px;
 }
 
-.menSale .btn:hover{
-    background-color: green;
-    border: none;
+.menSale {
+	background-image: url(img/7.webp);
+	height: 450px;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.menSaleBox{
-    background-color: lightgrey;
-    padding: 15px 45px;
-    opacity: 0.6;
+.menSale .btn {
+	padding: 10px 20px;
+	background-color: yellowgreen;
+	font-size: 18px;
 }
 
-.womenSale{
-    background-image: url(img/2.webp);
-    height: 450px;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menSale .btn:hover {
+	background-color: green;
+	border: none;
 }
 
-.womenSale .btn{
-    padding: 10px 20px;
-    background-color: yellowgreen;
-    font-size: 18px;
-    border: none;
+.menSaleBox {
+	background-color: lightgrey;
+	padding: 15px 45px;
+	opacity: 0.6;
 }
 
-
-.womenSale .btn:hover{
-    background-color: green;
+.womenSale {
+	background-image: url(img/2.webp);
+	height: 450px;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.bagpack .btn{
-    padding: 5px 12px;
-    background-color: yellowgreen;
-    font-size: 14px;
-    border: none;
+.womenSale .btn {
+	padding: 10px 20px;
+	background-color: yellowgreen;
+	font-size: 18px;
+	border: none;
 }
 
-.sunglass .btn{
-    padding: 5px 12px;
-    background-color: yellowgreen;
-    font-size: 14px;
-    border: none;
+.womenSale .btn:hover {
+	background-color: green;
 }
 
-
-.section5{
-    background-image: url(img/banner2.jpg);
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bagpack .btn {
+	padding: 5px 12px;
+	background-color: yellowgreen;
+	font-size: 14px;
+	border: none;
 }
 
-.s5Box{
-    display: flex;
-    align-items: center;
+.sunglass .btn {
+	padding: 5px 12px;
+	background-color: yellowgreen;
+	font-size: 14px;
+	border: none;
+}
+.small-sall-box {
+	background-color: rgba(240, 240, 240, 0.7);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	padding: 10px 0;
+}
+.section5 {
+	background-image: url(img/banner2.jpg);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.s5Box p{
-    font-size: 15px;
+.s5Box {
+	display: flex;
+	align-items: center;
 }
 
-.s5Box .btn{
-    padding: 5px 12px;
-    background-color: yellowgreen;
-    font-size: 18px;
-    border: none;
+.s5Box p {
+	font-size: 15px;
 }
 
+.s5Box .btn {
+	padding: 5px 12px;
+	background-color: yellowgreen;
+	font-size: 18px;
+	border: none;
+}
 
 @media only screen and (max-width: 576px) {
-    .s2Row {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    
-  }
+	.s2Row {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+/* UTILITIES */
+.fw-500 {
+	font-weight: 500;
+}

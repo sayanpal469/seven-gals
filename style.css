@@ -78,14 +78,48 @@
 .section3 {
 	margin-top: 120px;
 }
+.product-card {
+	position: relative;
+}
+.product-card:hover .hover-icons {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+	transform: translateY(0);
+}
+.hover-icons {
+	background-color: #f6f5f5;
+	padding: 8px 0;
+
+	position: absolute;
+	width: 83.3%;
+	bottom: 56px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: 0.3s ease-in-out;
+	transform: translateY(10px);
+}
+.hover-icons ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.hover-icons ul a {
+	color: #777;
+	padding: 10px;
+}
+.hover-icons ul li.devider {
+	color: rgb(176, 176, 176);
+}
 
 .menSale {
 	background-image: url(img/7.webp);
 	height: 450px;
 	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .menSale .btn {
@@ -109,9 +143,6 @@
 	background-image: url(img/2.webp);
 	height: 450px;
 	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .womenSale .btn {
@@ -123,6 +154,19 @@
 
 .womenSale .btn:hover {
 	background-color: green;
+}
+.menSale,
+.womenSale {
+	position: relative;
+	max-width: 25rem;
+}
+.menSale .text-center,
+.womenSale .text-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .bagpack .btn {
@@ -175,6 +219,64 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
+}
+
+/* NEWSLATTER SECTION */
+.newslatter-section {
+	background-color: yellowgreen;
+	padding: 30px 0;
+}
+.newslatter-section .input-group input {
+	border-radius: 0;
+}
+.newslatter-section .input-group button {
+	border-radius: 0;
+	background-color: #000;
+	color: #fff;
+}
+
+/* FOOTER */
+footer {
+	background-color: #eee;
+}
+.footer-logo img {
+	height: 200px;
+}
+.social-icons {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+}
+.social-icons a {
+	color: #000;
+	flex: 20px;
+	padding: 5px 10px;
+	display: block;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.social-icons i {
+	font-size: 20px;
+}
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+}
+.footer-links ul a {
+	color: #777;
+	display: block;
+	margin: 5px 0;
+	text-decoration: none;
+}
+.copyright {
+	background-color: yellowgreen;
+	padding: 20px 0;
+	text-align: center;
+}
+.copyright p {
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
 }
 
 /* UTILITIES */
